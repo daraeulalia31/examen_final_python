@@ -4,3 +4,16 @@ ejm:
 entrada: ("jose","alvarez","30","APSTI","III")
 salida: {nombre:"jose",apellido:"alvarez",edad:"30",programa_estudio:"APSTI",semestre:"III"}
 """
+def datos_personales(nombre, apellido, edad, programa_estudio, semestre):
+    alumno = {
+        "nombre": nombre,
+        "apellido": apellido,
+        "edad": edad,
+        "programa_estudio": programa_estudio,
+        "semestre": semestre
+    }
+    return alumno
+
+# Ejemplo de uso
+alumno1 = datos_personales("jose", "alvares", "30", "ASPTI", "III")
+print(alumno1)
